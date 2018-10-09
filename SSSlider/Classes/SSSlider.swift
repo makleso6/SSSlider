@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum SliderOrientation: Int {
+public enum SliderOrientation: Int {
     case horizontal = 0
     case verticalUp
     case verticalDown
