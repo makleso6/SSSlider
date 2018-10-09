@@ -25,7 +25,7 @@ public class SSSlider: UIView {
     @IBInspectable public var duration: CGFloat = 0.25
 
     //MARK: Orientation
-    private var orientation: SliderOrientation = .horizontal {
+    public var orientation: SliderOrientation = .horizontal {
         didSet {
             relayout()
         }
@@ -43,7 +43,7 @@ public class SSSlider: UIView {
         }
     }
     
-    @IBInspectable var orientationRaw: Int {
+    @IBInspectable public var orientationRaw: Int {
         get {
             return orientation.rawValue
         }
